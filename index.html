@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <!-- Signup Form -->
+    <div id="signupForm">
+      <h2>Signup</h2>
+      <input type="text" id="signupFirstName" placeholder="First Name">
+      <input type="text" id="signupLastName" placeholder="Last Name">
+      <input type="email" id="signupEmail" placeholder="Email">
+      <input type="password" id="signupPassword" placeholder="Password">
+      <button onclick="signup()">Signup</button>
+      <div class="toggle" onclick="showSignin()">Already have an account? Sign-in</div>
+    </div>
+
+    <!-- Signin Form -->
+    <div id="signinForm" class="hidden">
+      <h2>Sign-in</h2>
+      <input type="email" id="signinEmail" placeholder="Email">
+      <input type="password" id="signinPassword" placeholder="Password">
+      <button onclick="signin()">Sign-in</button>
+      <div class="toggle" onclick="showSignup()">Don't have an account? Signup</div>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard" class="hidden dashboard">
+      <h2>Welcome <span id="userName"></span></h2>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+
+
+    <script src="app.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
