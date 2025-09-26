@@ -1,1 +1,1 @@
-# signup-signin-form
+This application is designed to provide a secure and efficient way to manage user accounts. It allows users to sign up by creating an account with their details, securely log in with their credentials, and log out when finished. User data is stored in an object-based structure for easy management and retrieval. The app also ensures that duplicate registrations are avoided and login details are validated correctly.
